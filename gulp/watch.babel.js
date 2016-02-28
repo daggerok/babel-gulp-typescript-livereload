@@ -1,6 +1,6 @@
-import {gulp, srcDir, livereload, port} from './common.babel'
+import {gulp, srcDir, livereload} from './common.babel'
 
-gulp.task('watch', ['default', 'server'], () => {
+gulp.task('watch', ['default'], () => {
   livereload.listen({
     basePath: srcDir
   })
