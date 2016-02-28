@@ -4,9 +4,9 @@ gulp.task('watch', ['default'], () => {
   livereload.listen({
     basePath: srcDir
   })
-  gulp.watch(`${srcDir}/**/*.ts`, ['ts'])
   gulp.watch([
+    `${srcDir}/**/*.ts`,
     `${srcDir}/**/*.css`,
     `${srcDir}/**/*.html`
-  ], ['ts'])
+  ], ['default'])
 })
